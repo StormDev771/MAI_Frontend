@@ -53,6 +53,7 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
     try {
       // Call the weather API
       const weatherResponse = await weatherApi.getWeatherSummary(text);
+
       setResponse(weatherResponse);
 
       // Create bot response message
